@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//建立一条指定到首页的路由，对应home方法
+Route::get ('/', 'StaticPagesController@home');
+//建立一条指定到帮助页的路由，对应help方法
+Route::get ('help', 'StaticPagesController@help');
+//建立一条指定到关于的路由，对应about方法
+Route::get ('/about', 'StaticPagesController@about');
