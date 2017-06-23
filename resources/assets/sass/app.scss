@@ -1,2 +1,137 @@
-// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+/*sass文件支持定义变量，声明一个颜色并放入$navbar变量中，可以直接使用变量代替颜色编码*/
+$navbar-color:#3c3e42;
+
+/* universal--通用CSS*/
+
+body {
+  padding-top:60px;
+}
+
+section {
+  overflow:auto;
+}
+
+textarea {
+  resize:vertical;
+}
+
+.jumbotron {
+  text-align:center;
+}
+
+/* typography--排版CSS*/
+
+h1,h2,h2,h3,h4,h5,h6 {
+  line-height:1;
+}
+
+h1 {
+  font-size:3em;
+  letter-spacing:-2px;
+  margin-bottom:30px;
+  text-align:center;
+}
+
+h2 {
+  font-size:1.2em;
+  letter-sapcing:-1px;
+  margin-bottom:30px;
+  text-align:center;
+  font-weight:normal;
+  color:#777;
+}
+
+p {
+  font-size:1em;
+  line-height:1.7em;
+}
+
+/*header--头部导航CSS*/
+
+.navbar-inverse {
+  background-color:$navbar-color;
+}
+
+#logo {
+  float:left;
+  margin-right:10px;
+  font-size:1.7em;
+  color:#fff;
+  text-decoration:none;
+  letter-sapcing:-1px;
+  padding-top:9px;
+  font-weight:bold;
+  &:hover {
+    color:#fff;
+  }
+}
+
+/*footer--底部CSS*/
+footer {
+  margin-top:45px;
+  padding-top:5px;
+  border-top:1px solid #eaeaea;
+  color:#777;
+
+  a {
+    color:#555;
+    &:hover {
+      color:#222;
+    }
+  }
+
+  small {
+    float:left;
+  }
+
+  ul {
+    float:right;
+    li {
+      float:left;
+      margin-left:15px;
+    }
+  }
+
+  img.brand-icon {
+    width:7px;
+    height:17px;
+  }
+
+  .slogon {
+    font-size:13px;
+    font-weight:bold;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
